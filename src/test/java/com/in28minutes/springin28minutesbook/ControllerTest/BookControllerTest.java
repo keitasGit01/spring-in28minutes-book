@@ -37,5 +37,6 @@ public class BookControllerTest {
         Books books = new Books(1, "keita", "Reading book", 2002);
         Mockito.when(repository.save(books)).thenReturn(books);
         assertEquals(books, controller.saveBook(books));
+        System.out.println("test");
     }
 }
